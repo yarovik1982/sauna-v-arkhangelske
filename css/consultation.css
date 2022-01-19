@@ -1,0 +1,56 @@
+/* .consultation__bg {
+   width: 100%;
+   height: 300px;
+   background: linear-gradient(90deg, #70873A 0%, #76B852 100%);
+} */
+.consultation__row {
+   margin-top: 180px;
+   height: 300px;
+   background: linear-gradient(90deg, #70873A 0%, #76B852 100%);
+}
+
+.consultation__inner {
+   position: absolute;
+   display: flex;
+   justify-content: end;
+}
+.consultation__image {
+   position: absolute;
+    left: 0;
+    top: -81px;
+    z-index: 2;
+}
+.consultaton__form {
+   width: 894px;
+   height: 206px;
+   position: absolute;
+   left: 360px;
+   top: 45px;
+   display: flex;
+   justify-content: space-between;
+}
+.form__item-left,.form__item-right {
+   max-width: 422px;
+}
+.form__item-right{
+   align-self: flex-end;
+}
+.form__item-question {
+   font-family: "Prosto One",sans-serif;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 28px;
+   line-height: 35px;
+   color: #FFFFFF;
+   margin-bottom: 5px;
+}
+.form__item-text {
+   font-family: "Noto Sans",sans-serif;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 150%;
+   color: #FFFFFF;
+   opacity: 0.8;
+   margin-bottom: 30px;
+}

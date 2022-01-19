@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Montserrat+Alternates:wght@500;
+        600&family=Noto+Sans:wght@400;700&family=Numans&family=Nunito:wght@400;600;700&family=Open+Sans:wght@300;400;600;700&
+        family=Philosopher&family=Prosto+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="/css/modal.css">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/head.css">
+    <link rel="stylesheet" href="/css/is-free.css">
+    <link rel="stylesheet" href="/css/about.css">
+    <link rel="stylesheet" href="/css/slider.css">
+    <link rel="stylesheet" href="/css/benefits.css">
+    <link rel="stylesheet" href="/css/slid-banner.css">
+    <link rel="stylesheet" href="/css/consultation.css">
+    <link rel="stylesheet" href="/css/components.css">
+    <link rel="stylesheet" href="/css/reviews.css">
+    <link rel="stylesheet" href="/css/map.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="modal">
+        <div class="modal__container">
+            <form action="#" class="modal__form">
+                <div class="modal__item">
+                    <div class="modal__item-row">
+                        <p class="modal__item-text">Воспользоваться предложением</p>
+                        <span class="modal__item-close">
+                            <img src="/images/close.svg" alt="">
+                        </span>
+                    </div>
+                    <div class="modal__item-row">
+                        <p class="modal__item-descript">Для того, чтобы воспользоваться предложением, заполните форму</p>
+                    </div>
+
+                    <div class="modal__form-data">
+                        <input type="tel" class="modal__form-inp" placeholder="Ваш телефон">
+                        <select name="select-hall" id="select-hall" class="modal__form-select">
+                            <option selected>Выберите зал</option>
+                            <option value="russian">русская</option>
+                            <option value="finnish">финская</option>
+                            <option value="hammam">хаммам</option>
+                        </select>
+                    </div>
+                    <div class="modal__form-agreement">
+                        <input type="checkbox" name="modal__form-checkbox" id="modal__form-checkbox" class="modal__form-checkbox">
+                        <p class="modal__form-agree">Согласен на обработку и передачу персональных данных в соответствии с
+                            <a href="#" class="modal__form-agree-link">пользовательским соглашением</a> 
+                        </p>
+                    </div>    
+                </div>
+                <div class="modal__form-btn">          
+                    <button type="submit" class="modal__form-button is-button bg-green w-100-percents">
+                        <span class="btn__text">Получить код</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+  <header class="header">
+    <div class="container__full">
+        <div class="header__bg">
+            <div class="header__filter">
+                <div class="container">
+                    <nav class="header__nav">
+                        <a href="#" class="header__logo">
+                            <img src="/images/logo.svg" alt="">
+                            <div class="header__text">
+                                <span class="header__text_top">Баня Лукоморье</span>
+                                <span class="header__text_bottom">в Архангельске</span>
+                            </div>
+                        </a>
+                        <ul class="header__menu menu__list">
+                            <li class="menu__item"><a href="#" class="menu__link">Залы</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">О нас</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Отзывы</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+                        </ul>
+                        <div class="header__info info">
+                            <a href="#" class="info__top">
+                                <span class="info__icon">
+                                    <img src="/images/icon-tel.svg" alt="">
+                                </span>
+                                <span class="info__tel">+7 (911) 554-00-99</span>
+                            </a>
+                            <button class="info__btn" data-id="offer">
+                                <span class="btn__text">Забронировать</span>
+                                <span class="btn__arrow"><img src="/images/icon-arrow-more.svg" alt=""></span>
+                            </button>
+                        </div>
+                    </nav>
+                    <div class="header__row">
+                        <div class="header__column">
+                            <h1 class="header__title">
+                                Баня Лукоморье
+                                <br>
+                                в Архангельске
+                            </h1>
+                            <div class="header__location">
+                                <a href="#" class="header__marker">
+                                    <img src="/images/entypo_location-pin.svg" alt="">
+                                    <span class="header__adress">г. Архангельск, СНТ Транспортник, стр. 11</span>
+                                </a>
+                            </div>
+                            <p class="header__offer-text offer">Работаем круглосуточно</p>
+                            <p class="header__offer-price offer">Цены от 900 рублей</p>
+                            <button class="header__btn-callback is-button bg-green">
+                                <span class="btn__text">Заказать обратный звонок</span>
+                                <span class="btn__arrow">
+                                    <img src="/images/icon-arrow-more.svg" alt="">
+                                </span>
+                            </button>
+                        </div>
+                        <div class="header__column_right">
+                            <a href="#" class="header__social">
+                                <img src="/images/whatsapp.svg" alt="">
+                            </a>
+                            <a href="#" class="header__social">
+                                <img src="/images/telegram.svg" alt="">
+                            </a>
+                            <a href="#" class="header__social">
+                                <img src="/images/viber.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       </div>
+  </header>
+
+  <section class="is-free ">
+      <div class="container">
+          <div class="is-free__row">
+              <div class="is-free__column">
+                  <div class="is-free_img">
+                    <img src="/images/img-3.jfif" alt="">
+                  </div>
+              </div>
+              <div class="is-free__column">
+                  <div class="is-free__item">
+                      <h3 class="is-free__title">Узнать, свободна ли сауна</h3>
+                      <form action="#" class="is-free__form form-green-bg">
+                          <input type="tel" placeholder="Ваш телефон" class="is-free_input input-white-text">
+                          <input type="text" placeholder="Время посещения сауны" class="is-free_input input-white-text">
+                          <input type="text" placeholder="Введите количество часов" class="is-free_input input-white-text">
+                          <div class="is-free__agreement">
+                              <input type="checkbox" name="agree" id="agree" class="is-free__checkbox">
+                              <p class="is-free__agreement-user">
+                                Согласен на обработку и передачу персональных данных
+                                в соответствии с 
+                                <a href="#" class="is-free__link-agreement">пользовательским соглашением</a>
+                              </p>
+                          </div>
+                          <button type="submit" class="is-free__btn is-button bg-white">
+                              <span class="btn__text">Проверить</span>
+                              <span class="btn__arrow">
+                                <img src="/images/icon-arrow-more-greeny.svg" alt="">
+                              </span>
+                          </button>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <section class="about none">
+      <div class="container">
+          <div class="about__row">
+              <div class="about__column">
+                  <h2 class="about__title title">О нас</h2>
+                  <div class="about__item">
+                      <p class="about__post post" data-id="1"></p>
+                  </div>
+              </div>
+              <div class="about__column">
+                  <div class="about__image">
+                      <img src="/images/sauna.jfif" alt="">
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <section class="slider none">
+        <div class="container">
+            <div class="slider__row">
+                <div class="slider__btn">
+                    <div class=" my-swiper-button-prev">
+                        <img src="/images/btn-arrow-prev.svg" alt="">
+                    </div>
+                    <div class=" my-swiper-button-next">
+                        <img src="/images/btn-arrow-next.svg" alt="">
+                    </div>
+                </div>
+                <div class="slider__row-title">
+                    <h2 class="slider__title title">Наши залы</h2>
+                    <a href="#" class="slider__link">Смотреть все залы</a>
+                    
+                </div>
+                <div class="swiper my-swiper">
+                
+                    <div class="swiper-wrapper my-swaiper-wrapper">
+                    
+                        <div class="swiper-slide my-swiper-slide slide-halls">
+                            <a href="#" class="slide-halls__item">
+                                <div class="slide-halls__image">
+                                    <img src="/images/russian.jfif" alt="">
+                                </div>
+                                <div class="slide-halls__descript">
+                                    <h4 class="slide-halls__title">Русская баня</h4>
+                                    <ul class="slide-hall__list">
+                                        <li class="slide-hall__item">
+                                            <span class="slide-hall__text_green">Цена: </span>
+                                            <span class="slide-hall__text_black">от 600 руб.</span>
+                                        </li>
+                                        <li class="slide-hall__item">
+                                            <span class="slide-hall__text_green">Тип парной: </span>
+                                            <span class="slide-hall__text_black">русская</span>
+                                        </li>
+                                        <li class="slide-hall__item">
+                                            <span class="slide-hall__text_green">Вместимость: </span>
+                                            <span class="slide-hall__text_black">3 человека</span>
+                                        </li>
+                                    </ul>
+                                    <a href="#" class="slide-hall__btn is-button-slide">
+                                        <span class="btn__text">Подробнее</span>
+                                        <span class="btn__arrow">
+                                            <img src="/images/icon-arrow-more.svg" alt="">
+                                        </span>
+                                    </a>
+                                </div>
+                            </a>
+                        </div>
+                    
+                        <div class="swiper-slide my-swiper-slide slide-halls">
+                            <a href="#" class="slide-halls__item">
+                                <div class="slide-halls__image">
+                                    <img src="/images/finnish.jfif" alt="">
+                                </div>
+                                <div class="slide-halls__descript">
+                                    <h4 class="slide-halls__title">Финская сауна</h4>
+                                    <ul class="slide-hall__list">
+                                        <li class="slide-hall__item">
+                                            <span class="slide-hall__text_green">Цена: </span>
+                                            <span class="slide-hall__text_black">от 600 руб.</span>
+                                        </li>
+                                        <li class="slide-hall__item">
+                                            <span class="slide-hall__text_green">Тип парной: </span>
+                                            <span class="slide-hall__text_black">финская</span>
+                                        </li>
+                                        <li class="slide-hall__item">
+                                            <span class="slide-hall__text_green">Вместимость: </span>
+                                            <span class="slide-hall__text_black">3 человека</span>
+                                        </li>
+                                    </ul>
+                                    <a href="#" class="slide-hall__btn is-button-slide">
+                                        <span class="btn__text">Подробнее</span>
+                                        <span class="btn__arrow">
+                                            <img src="/images/icon-arrow-more.svg" alt="">
+                                        </span>
+                                    </a>
+                                </div>
+                            </a>
+                        </div>
+                    
+                        <div class="swiper-slide my-swiper-slide slide-halls">
+                            <a href="#" class="slide-halls__item">
+                                <div class="slide-halls__image">
+                                    <img src="/images/hamam.jfif" alt="">
+                                </div>
+                                <div class="slide-halls__descript">
+                                    <h4 class="slide-halls__title">Хаммам</h4>
+                                    <ul class="slide-hall__list">
+                                        <li class="slide-hall__item">
+                                            <span class="slide-hall__text_green">Цена: </span>
+                                            <span class="slide-hall__text_black">от 600 руб.</span>
+                                        </li>
+                                        <li class="slide-hall__item">
+                                            <span class="slide-hall__text_green">Тип парной: </span>
+                                            <span class="slide-hall__text_black">хаммам</span>
+                                        </li>
+                                        <li class="slide-hall__item">
+                                            <span class="slide-hall__text_green">Вместимость: </span>
+                                            <span class="slide-hall__text_black">3 человека</span>
+                                        </li>
+                                    </ul>
+                                    <a href="#" class="slide-hall__btn is-button-slide">
+                                        <span class="btn__text">Подробнее</span>
+                                        <span class="btn__arrow">
+                                            <img src="/images/icon-arrow-more.svg" alt="">
+                                        </span>
+                                    </a>
+                                </div>
+                            </a>
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>      
+        </div>
+  </section>
+
+  <section class="benefits none">
+      <div class="container">
+          <div class="benefits__row">
+              <h4 class="benefits__title">Преимущества</h4>
+              <ul class="benefits__list option__list">
+                <li class="option__item">
+                    <button class="option__button" id="1">
+                        <span class="option__icon">
+                            <img src="/images/aqua.svg" alt="">
+                        </span>
+                        <span class="option__title">Аквазона</span>
+                    </button>
+                    <div class="option__description">
+                        <p class="option__text">
+                            Бассейн, Размеры (Ш x Д x Г), м: 2 x 4 x 1.7, Подсветка, Фильтрация, Душ
+                        </p>
+                    </div>
+                </li>
+                
+                <li class="option__item">
+                    <button class="option__button" id="2">
+                        <span class="option__icon">
+                            <img src="/images/rest.svg" alt="">
+                        </span>
+                        <span class="option__title">Комната отдыха</span>
+                    </button>
+                    <div class="option__description">
+                        <p class="option__text">
+                            С комнатой отдыха S: 10 м2, вместимость: 2 чел. S: 10 м2, вместимость: 2 чел.
+                        </p>
+                    </div>
+                </li>
+
+                <li class="option__item">
+                    <button class="option__button" id="3">
+                        <span class="option__icon">
+                            <img src="/images/food.svg" alt="">
+                        </span>
+                        <span class="option__title">Питание и напитки</span>
+                    </button>
+                    <div class="option__description">
+                        <p class="option__text">
+                            Можно со своей едой , Мангал (+300 руб.), Барбекю зона, Кафе/ресторан, Бар, Обеденная зона, Вместимость: 6 чел., Чай, Русская кухня, Европейская кухня
+                        </p>
+                    </div>
+                </li>
+
+                <li class="option__item">
+                    <button class="option__button" id="4">
+                        <span class="option__icon">
+                            <img src="/images/audio.svg" alt="">
+                        </span>
+                        <span class="option__title">Оборудование</span>
+                    </button>
+                    <div class="option__description">
+                        <p class="option__text">
+                            Аудиоцентр, Телевизор
+                        </p>
+                    </div>
+                </li>
+
+                <li class="option__item"> 
+                    <button class="option__button" id="5">
+                        <span class="option__icon">
+                            <img src="/images/add.svg" alt="">
+                        </span>
+                        <span class="option__title">Дополнительно</span>
+                    </button>
+                    <div class="option__description">
+                        <p class="option__text">
+                            Есть веники, Березовый, Дубовый, Парковка, Со своим веником, С коттеджем на сутки (+5000 руб.), Банкетный зал (+1500 руб.), Вместимость: 120 чел., Гостиница (+1900 руб.), Беседка (Летняя веранда) (+1500 руб.), С выходом к реке, Тапочки (+50 руб.), Простыни (+50 руб.), Полотенца (+100 руб.), Мыло, Посуда
+                        </p>
+                    </div>
+            </li>
+
+            </ul>
+          </div>
+      </div>
+  </section>
+
+  <section class="slid-banner">
+      <div class="container">
+          <div class="slid-banner__row">
+              <h2 class="slid-banner__title title">Актуальные скидки и акции</h2>
+              <div class="slid-banner__buttons">
+                <div class="swiper-button-prev-banner">
+                    <img src="/images/btn-arrow-prev.svg" alt="">
+                </div>
+                <div class="swiper-button-next-banner">
+                    <img src="/images/btn-arrow-next.svg" alt="">
+                </div>
+              </div>
+              <div class="swiper-banner">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper swaiper-wrapper-banner">
+                  
+                  <div class="swiper-slide swaiper-slide-banner banner">
+                      <div class="banner__item">
+                          <div class="banner__item-block">
+                              <div class="banner__item-content">
+                                  <h2 class="banner__item-title">Скидка</h2>
+                                  <p class="banner__item-text">с понедельника по четверг</p>
+                                  <button class="banner__item-button is-button bg-green">
+                                    <span class="btn__text">Получить скидку</span>
+                                    <span class="btn__arrow">
+                                        <img src="/images/icon-arrow-more.svg" alt="">
+                                    </span>
+                                  </button>
+                              </div>
+                          </div>
+                          <div class="banner__item-images">
+                              <img src="/images/action.jfif" alt="">
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="swiper-slide swaiper-slide-banner">
+                    <div class="banner__item">
+                        <div class="banner__item-block">
+                            <div class="banner__item-content">
+                                <h2 class="banner__item-title">
+                                    <span class="banner__item-title-span">4-й</span>
+                                    <span class="banner__item-title-span">час в подарок</span>
+                                </h2>
+                                <p class="banner__item-text">с понедельника по четверг</p>
+                                <button class="banner__item-button is-button bg-green">
+                                  <span class="btn__text">Получить скидку</span>
+                                  <span class="btn__arrow">
+                                      <img src="/images/icon-arrow-more.svg" alt="">
+                                  </span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="banner__item-images">
+                            <img src="/images/action.jfif" alt="">
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide swaiper-slide-banner">
+                    <div class="banner__item">
+                        <div class="banner__item-block">
+                            <div class="banner__item-content">
+                                <h2 class="banner__item-title">Скидка</h2>
+                                <p class="banner__item-text">с понедельника по четверг</p>
+                                <button class="banner__item-button is-button bg-green">
+                                  <span class="btn__text">Получить скидку</span>
+                                  <span class="btn__arrow">
+                                      <img src="/images/icon-arrow-more.svg" alt="">
+                                  </span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="banner__item-images">
+                            <img src="/images/action.jfif" alt="">
+                        </div>
+                    </div>
+                  </div>
+                  
+                </div>
+                <!-- If we need pagination -->
+
+
+                <div class="swiper-pagination-banner"></div>
+              
+                <!-- If we need navigation buttons -->
+                
+              
+                <!-- If we need scrollbar -->
+                <!-- <div class="swiper-scrollbar"></div> -->
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <section class="consultation none">
+      <div class="container__full">
+        <div class="consultation__row">
+            <div class="container">
+                <div class="consultation__inner">
+                    <div class="consultation__image">
+                      <img src="/images/girl.png" alt="Girl with phone">
+                    </div>
+                    <form action="#" class="consultaton__form form__item">
+                        <div class="form__item-left">
+                            <h3 class="form__item-question">Нужна консультация?</h3>
+                            <p class="form__item-text">закажите обратный звонок, мы вам перезвоним</p>
+                            <input type="text" placeholder="Ваш имя" class="is-free_input input-white-text">
+                            <div class="is-free__agreement">
+                                <input type="checkbox" name="agree" id="agree" class="is-free__checkbox">
+                                <p class="is-free__agreement-user">
+                                  Согласен на обработку и передачу персональных данных
+                                  в соответствии с 
+                                  <a href="#" class="is-free__link-agreement">пользовательским соглашением</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="form__item-right">
+                            <input type="tel" placeholder="Ваш телефон" class="is-free_input input-white-text">
+                            <button class="is-button bg-white">
+                                <span class="btn__text">Проверить</span>
+                                <span class="btn__arrow">
+                                    <img src="/images/icon-arrow-more-greeny.svg" alt="">
+                                </span>
+                            </button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+      </div>
+  </section>
+
+  <section class="reviews none">
+      <div class="container">
+          <h2 class="reviews__title title">Отзывы</h2>
+          <div class="reviews__row-container"><!-- --></div>
+          <div class="reviews__row">
+              <div class="reviews__row-btns">
+                  <button class="reviews__row-btn is-button bg-green">
+                    <span class="btn__text">Смотреть еще</span>
+                    <span class="btn__arrow">
+                        <img src="/images/icon-arrow-more.svg" alt="">
+                    </span>
+                  </button>
+                  <button class="reviews__row-btn is-button bg-white is-border">
+                    <span class="btn__text">Оставить отзыв</span>
+                    <span class="btn__arrow">
+                        <img src="/images/icon-arrow-more-greeny.svg" alt="">
+                    </span>
+                  </button>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <section class="map ">
+      <div class="container__full">
+        <div  id="map" style="width: 1920px;height: 500px;"></div>
+      </div>
+  </section>
+
+  <footer class="footer">
+      <div class="container__full">
+          <div class="footer__bg">
+              <p class="footer__text">CОЗДАНИЕ И ПРОДВИЖЕНИЕ САЙТА - ПРИОРИТЕТ | ОБОРУДОВАНИЕ ДЛЯ САУН</p>
+          </div>
+      </div>
+  </footer>
+
+     
+ 
+
+  <script type="module" src="/js/main.js"></script>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="/js/slider.js"></script>
+  <script src="/js/yandexMap.js"></script>
+</body>
+40.722492,64.673922
+</html>
+<div class="map__bg">
+    <div class="container">
+        <div class="map__row">
+            <div class="map__col">
+                <div class="map__contacts">
+                    <div class="map__contacts-item contacts">
+                        <div class="contacts__row">
+                            <span class="contacts__row-icon">
+                                <img src="/images/marker-min.svg" alt="">
+                            </span>
+                            <p class="contacts__row-text"><strong>Наш адрес:</strong> город Архангельск,
+                              <br>  СНТ Транспортник, стр.11
+                            </p>
+                        </div>
+                        <div class="contacts__row">
+                            <span class="contacts__row-icon">
+                                <img src="/images/tel-min.svg" alt="">
+                            </span>
+                            <p class="contacts__row-text"><strong>Телефон:</strong> +7 (911) 554-33-44</p>
+                        </div>
+                        <div class="contacts__row">
+                            <span class="contacts__row-icon">
+                                <img src="/images/watch-min.svg" alt="">
+                            </span>
+                            <p class="contacts__row-text"><strong>График работы:</strong> круглосуточно</p>
+                        </div>
+                        <div class="contacts__row">
+                            <img src="/images/whatsapp.svg" alt="Icon Watsapp">
+                            <img src="/images/telegram.svg" alt="Icon Telrgram">
+                            <img src="/images/viber.svg" alt="Icon Viber">
+                        </div>
+                        <div class="contacts__row">
+                            <button class="contacts__btn is-button bg-green h-65">
+                              <span class="btn__text">Заказать обратный звонок</span>
+                              <span class="btn__arrow">
+                                  <img src="/images/icon-arrow-more.svg" alt="">
+                              </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="position:relative;overflow:hidden;">
+    <a href="https://yandex.ru/maps?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">
+        Яндекс.Карты
+    </a>
+    <!-- <a href="https://yandex.ru/maps/10842/arkhange'lskaya-oblast'/house/snt_transportnik_11/YEkYcQViTUwGQFhufXp2cnVhZg==/?ll=40.722492%2C64.673922&utm_medium=mapframe&utm_source=maps&z=16.61" style="color:#eee;font-size:12px;position:absolute;top:14px;">
+        СНТ Транспортник, 11 — Яндекс.Карты</a> -->
+        <iframe src="https://yandex.ru/map-widget/v1/-/CCUyv6r-OD" width="1920" height="500" frameborder="1" allowfullscreen="true" style="position:relative;">
+        </iframe>
+    </div>
+

@@ -1,0 +1,39 @@
+
+/* Buttons */
+.is-button{
+   width: 422px;
+   height: 50px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 5px;
+
+}
+.is-button.bg-green{
+   background: #70873A;
+}
+.is-button.bg-white{
+   background-color: #fff;
+}
+.is-border{
+   border: 1px solid #70873A;
+}
+.h-65{
+   height: 65px;
+}
+.is-button.bg-green.w-100-percents{
+   width: 100%;
+}
+.is-button.bg-white .btn__text{
+   color:#70873A;
+}
+.is-button-slide{
+   width: 330px;
+   height: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #70873A;
+   margin-top: 30px;
+   border-radius: 5px;
+}

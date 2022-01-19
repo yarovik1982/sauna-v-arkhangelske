@@ -1,0 +1,19 @@
+.footer {
+}
+.container__full {
+}
+.footer__bg {
+   width: 100%;
+   padding-top: 45px;
+   padding-bottom: 46px;
+   background: #70873A;
+}
+.footer__text {
+   font-family: "Noto Sans",sans-serif;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 20px;
+   line-height: 27px;
+   color: #FFFFFF;
+   text-align: center;
+}

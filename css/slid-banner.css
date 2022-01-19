@@ -1,0 +1,105 @@
+.slid-banner__row {
+   margin-top: 80px;
+   position: relative;
+}
+.slid-banner__title {
+   margin-bottom: 35px;
+}
+.slid-banner__buttons {
+   position: absolute;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   top: calc(50% + 40px);
+}
+.swiper-banner {
+   width: 1140px;
+   height: 300px;
+   margin: 0 auto;
+   overflow: hidden;
+}
+.banner__item {
+   position: relative;
+}
+.banner__item-block {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 665px;
+   height: 300px;
+   -webkit-clip-path: polygon(100% 100%, 0% 100%, 0% 0%, 72% 0%);
+clip-path: polygon(100% 100%, 0% 100%, 0% 0%, 72% 0%);
+background-color: white;
+}
+.banner__item-images {
+   position: absolute;
+   top: 0;
+   right: 0;
+   width: 660px;
+   height: 299px;
+   z-index: -1;
+}
+.banner__item-images img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.banner__item-content {
+   padding-top: 59px;
+   padding-left: 40px;
+}
+.banner__item-title {
+   font-family: "Prosto One",sans-serif;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 60px;
+   line-height: 74px;
+   letter-spacing: 0.03em;
+   color: #70873A;
+}
+.banner__item-title-span:first-child {
+   font-family: "Prosto One",sans-serif;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 60px;
+   line-height: 74px;
+   letter-spacing: 0.03em;
+   color: #70873A;
+}
+.banner__item-title-span:last-child{
+   font-family: "Prosto One",sans-serif;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 30px;
+   line-height: 37px;
+   letter-spacing: 0.03em;
+   color: #1E1E1E;
+}
+.banner__item-text {
+   font-family: "Noto Sans",sans-serif;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 22px;
+   letter-spacing: 0.03em;
+   color: #4B4B4B;
+   margin-top: 10px;
+   margin-bottom: 30px;
+}
+.swiper-pagination-banner{
+   position: absolute;
+   height: 10px;
+   top: 110%;
+   display: flex;
+   justify-content: center;
+}
+.swiper-pagination-banner>.swiper-pagination-bullet{
+   width: 10px;
+   height: 10px;
+   border-radius: 50%;
+   background: rgba(112, 135, 58,0.5);
+}
+.swiper-pagination-banner>.swiper-pagination-bullet.active{
+   background-color: rgb(112, 135, 58,);
+}

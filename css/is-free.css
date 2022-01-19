@@ -1,0 +1,81 @@
+
+.is-free__row {
+   margin-top: 100px;
+   display: flex;
+}
+.is-free__column {
+   flex:1 1 50%;
+}
+.is-free_img {
+   width: 641px;
+   height: 506px;
+}
+.is-free_img img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.is-free__item {
+   padding-top: 50px;
+   padding-left: 108px;
+   padding-bottom: 65px;
+   padding-right: 110px;
+   background-color: #70873a;
+}
+.is-free__title {
+   font-family: "Prosto One",sans-serif;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 28px;
+   line-height: 35px;
+   color: #FFFFFF;
+   margin-bottom: 39px;
+}
+.is-free__form {
+   display: flex;
+   flex-direction: column;
+   /* color: #FFFFFF */
+}
+
+.input-white-text::-webkit-input-placeholder{
+   color: rgb(255, 255, 255);
+}
+.input-white-text {
+   width: 100%;
+   border-bottom: 1px solid #fff;
+   margin-bottom: 30px;
+   padding-bottom: 10px;
+   font-family: "Noto Sans",sans-serif;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 22px;
+   background-color: transparent;
+   color: #fff;
+
+}
+.is-free__agreement {
+   display: flex;
+   align-items: center;
+   margin-bottom: 40px;
+}
+.is-free__checkbox {
+   margin-right: 15px;
+}
+.is-free__agreement-user {
+   font-family: "Noto Sans",sans-serif;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 14px;
+   line-height: 19px;
+   color: #fff;
+}
+.is-free__link-agreement {
+   font-family: "Noto Sans",sans-serif;
+   font-style: normal;
+   font-weight: 600;
+   font-size: 14px;
+   line-height: 19px;
+   color: #fff;
+   text-decoration: underline;
+}

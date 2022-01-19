@@ -1,0 +1,38 @@
+.about__row {
+   margin-top: 100px;
+   display: flex;
+}
+.about__column {
+   flex:1 1 50%;
+}
+.title {
+   font-family: "Prosto One",sans-serif;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 60px;
+   line-height: 74px;
+   letter-spacing: 0.03em;
+   color: #1E1E1E;
+   margin-bottom: 35px;
+}
+.about__item {
+   max-width: 620px;
+   
+}
+.about__post {
+   font-family: "Noto Sans",sans-serif;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 150%;
+   color: #4B4B4B;
+}
+.about__image {
+   max-width: 620px;
+   min-height: 365px;
+   margin-left: 20px;
+}
+.about__image img{
+   width: 100%;
+   object-fit: cover;
+}

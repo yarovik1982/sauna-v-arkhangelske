@@ -1,0 +1,43 @@
+
+.reviews__title {
+   margin-top: 80px;
+}
+
+.reviews__row-review {
+   margin-top: 30px;
+   padding-bottom: 30px;
+   border-bottom: 1px solid rgba(75, 75, 75, 0.7);
+   margin-bottom: 50px;
+}
+.reviews__row-rate {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-bottom: 12px;
+}
+.reviews__row-name {
+   font-family: "Noto Sans",sans-serif;
+   font-style: normal;
+   font-weight: 600;
+   font-size: 20px;
+   line-height: 27px;
+   color: #1E1E1E;
+   margin-bottom: 10px;
+}
+.reviews__row-text {
+   font-family: Nunito,sans-serif;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 22px;
+   color: #1E1E1E;
+}
+.reviews__row {
+   max-width: 884px;
+   margin: 0 auto;
+}
+.reviews__row-btns {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
