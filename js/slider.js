@@ -1,14 +1,15 @@
 const swiper = new Swiper('.swiper', {
    // Optional parameters
    // direction: 'vertical',
-   slidesPerView: 3,
+   slidesPerView: 1,
    spaceBetween: 20,
    loop: true,
  
    // If we need pagination
-   // pagination: {
-   //   el: '.swiper-pagination',
-   // },
+   pagination: {
+     el: '.swiper-pagination',
+     clicable:true,
+   },
  
    // Navigation arrows
    navigation: {
@@ -16,10 +17,6 @@ const swiper = new Swiper('.swiper', {
      prevEl: '.my-swiper-button-prev',
    },
  
-   // And if we need scrollbar
-   // scrollbar: {
-   //   el: '.swiper-scrollbar',
-   // },
  });
 
  const swiperBanner = new Swiper('.swiper-banner', {
@@ -35,3 +32,19 @@ const swiper = new Swiper('.swiper', {
       clickable: true,
     },
  }) 
+const slides = ["./images/russian.jfif", "./images/finnish.jfif", "./images/hamam.jfif"]
+ const bullets = document.querySelectorAll('.swiper-pagination-bullet')
+ bullets.forEach((bullet, i) => {
+  bullet.style.width = 100 + 'px'
+  bullet.style.height = 100 + 'px'
+  bullet.style.borderRadius = 50 + '%'
+  bullet.style.overflow = 'hidden'
+  // bullet.style.display = 'block'
+
+
+  bullet.innerHTML = `<img src=${slides[i]} alt='Slide${[i]}' style="width:100%; object-fit:cover;">`
+
+
+ })
+ console.log(bullets);
+ 
